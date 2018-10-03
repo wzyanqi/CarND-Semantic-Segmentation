@@ -1,6 +1,29 @@
 # Semantic Segmentation
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+The goal of this project is to construct a fully convolutional neural network based on the VGG-16 image classifier architecture for performing semantic segmentation to identify drivable road area from an car dashcam image (trained and tested on the KITTI data set).
+
+### Optimizer
+The loss function for the network is cross-entropy, and an Adam optimizer is used.
+
+### Training
+The hyperparameters used for training are:
+
+- keep_prob: 0.75
+- learning_rate: 0.0001
+- epochs: 50
+- batch_size: 10
+
+### Result
+![](https://i.imgur.com/pyW8p7j.png)
+
+![](https://i.imgur.com/JC26ILP.png)
+
+![](https://i.imgur.com/6aGKy3Y.png)
+
+### Reference
+1. [ksakmann's Segmentation](https://github.com/ksakmann/CarND-Semantic-Segmentation)
+2. [jeremy-shannon's Segmentation](https://github.com/jeremy-shannon/CarND-Semantic-Segmentation)
+3. [dtraskas's Segmentation](https://github.com/dtraskas/CarND-Semantic-Segmentation)
 
 ### Setup
 ##### GPU
